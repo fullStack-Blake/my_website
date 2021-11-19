@@ -5,7 +5,7 @@ const myTheme: DefaultTheme = {
   borderRadius: "5px",
 
   colors: {
-    background: "#e8e8e4",
+    background: "#f1faee",
     main: "cyan",
     secondary: "magenta",
     burger: "#2F4858",
