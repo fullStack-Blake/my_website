@@ -11,7 +11,6 @@ const Container = styled.div`
   font-size: 13px;
   font-weight: 400;
   background-color: ${(props) => props.theme.colors.background};
-  z-index: 9;
   transition: background 0.3s;
 `;
 const Main = styled.div`

@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+  cursor: pointer;
   top: 50%;
-  right: 10%;
+  right: 30px;
   transform: translate(-50%, -50%);
   position: absolute;
   width: 20px;

@@ -11,6 +11,8 @@ declare module "styled-components" {
       secondary: string;
       background: string;
       burger: string;
+      button: string;
+      iconBox: string;
     };
   }
 }
