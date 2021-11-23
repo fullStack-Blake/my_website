@@ -6,8 +6,8 @@ import Background from "../Images/blob-haikei.png";
 import Computer from "../Images/computer.jpg";
 
 const Container = styled.div`
-  position: relative;
-  min-height: calc(100vh - 70px);
+  /* position: relative; */
+  /* min-height: calc(100vh - 70px); */
 `;
 const HomeContent = styled.div`
   /* margin-top: 20px; */

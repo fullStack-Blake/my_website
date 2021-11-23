@@ -6,7 +6,7 @@ import Linkedin from "../Images/linkedin.png";
 import Instagram from "../Images/instagram.png";
 
 const Container = styled.div`
-  position: absolute;
+  position: relative;
   bottom: 0;
   height: 4rem;
   width: 100%;
@@ -35,18 +35,24 @@ const Footer = () => (
   <Container>
     <IconList>
       <List>
-        <Link target="_blank">
+        <Link target="_blank" href={"https://github.com/fullStack-Blake/"}>
           <Icon src={Github} />
         </Link>
       </List>
       <List>
-        <Icon src={Idea} />
+        <Link target="_blank" href={""}>
+          <Icon src={Idea} />
+        </Link>
       </List>
       <List>
-        <Icon src={Linkedin} />
+        <Link target="_blank" href={"https://www.linkedin.com/in/sangyeuphan/"}>
+          <Icon src={Linkedin} />
+        </Link>
       </List>
       <List>
-        <Icon src={Instagram} />
+        <Link target="_blank" href={""}>
+          <Icon src={Instagram} />
+        </Link>
       </List>
     </IconList>
   </Container>
