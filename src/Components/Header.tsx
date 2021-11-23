@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
 import Logo from "./Logo";
@@ -18,18 +18,28 @@ const Main = styled.div`
   display: flex;
 `;
 const LogoB = styled(Logo)``;
-const HamburgerH = styled(Hamburger)``;
+const Button = styled.button``;
 
-const Header = () => (
-  <>
-    <Modal />
-    <Container>
-      <Main>
-        <Logo />
-        <Hamburger />
-      </Main>
-    </Container>
-  </>
-);
+const Header = () => {
+  const [modal, setModal] = useState(false);
+  const HandleModal = () => {
+    console.log("Working");
+    setModal((prevState) => !prevState);
+  };
+  const HandleDiv = (event: React.MouseEvent) => {
+    console.log("This is working");
+  };
+  return (
+    <>
+      <Modal HandleModal={HandleModal} modal={modal} />
+      <Container>
+        <Main>
+          <Logo />
+          <Hamburger HandleModal={HandleModal} />
+        </Main>
+      </Container>
+    </>
+  );
+};
 
 export default Header;

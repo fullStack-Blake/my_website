@@ -3,8 +3,11 @@ import styled from "styled-components";
 import { Routes, Route } from "react-router";
 import { Link } from "react-router-dom";
 
-const Container = styled.div`
-  /* display: none; */
+interface ContainerProps {
+  modal: boolean;
+}
+const Container = styled.div<ContainerProps>`
+  display: ${(props) => (props.modal ? "initial" : "none")};
   position: fixed;
   z-index: 1;
   top: 0;
@@ -59,20 +62,26 @@ const MLink = styled(Link)`
     opacity: 0.4;
   }
 `;
+interface ModalProps {
+  HandleModal: React.MouseEventHandler;
+  modal: boolean;
+}
 
-const Modal = () => (
-  <Container>
-    <Content>
-      <Close>&times;</Close>
+const Modal = ({ HandleModal, modal }: ModalProps) => {
+  return (
+    <Container modal={modal}>
+      <Content>
+        <Close onClick={HandleModal}>&times;</Close>
 
-      <MList>
-        <MLink to={"/"}>Home</MLink>
-        <MLink to={"/portfolio"}>Portfolio</MLink>
-        <MLink to={"/about"}>About</MLink>
-        <MLink to={"/contact"}>Contact</MLink>
-      </MList>
-    </Content>
-  </Container>
-);
+        <MList>
+          <MLink to={"/"}>Home</MLink>
+          <MLink to={"/portfolio"}>Portfolio</MLink>
+          <MLink to={"/about"}>About</MLink>
+          <MLink to={"/contact"}>Contact</MLink>
+        </MList>
+      </Content>
+    </Container>
+  );
+};
 
 export default Modal;

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { MouseEvent } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+  all: unset;
   cursor: pointer;
   top: 50%;
   right: 30px;
@@ -31,8 +32,12 @@ const Container = styled.div`
 `;
 const Bar = styled.div``;
 
-const Hamburger = () => (
-  <Container>
+interface HamburgerProps {
+  HandleModal: React.MouseEventHandler;
+}
+
+const Hamburger: React.FC<HamburgerProps> = ({ HandleModal }) => (
+  <Container onClick={HandleModal}>
     <Bar />
   </Container>
 );
