@@ -1,29 +1,34 @@
 import React from "react";
 import styled from "styled-components";
+import { Routes, Route } from "react-router";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  /* display: none; Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 const Content = styled.div`
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 15% auto;
+  /* padding: 10px; */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  width: 60%;
 `;
+
 const Close = styled.button`
   all: unset;
   color: #aaa;
-  float: right;
+  display: block;
+  width: 98%;
+  text-align: right;
   font-size: 28px;
   font-weight: bold;
   &:hover,
@@ -33,20 +38,39 @@ const Close = styled.button`
     cursor: pointer;
   }
 `;
+const MList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+`;
+const MLink = styled(Link)`
+  all: unset;
+  display: block;
+  /* height: 70px; */
+  vertical-align: middle;
+  line-height: 70px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: ${(props) => props.theme.colors.iconBox};
+    opacity: 0.4;
+  }
+`;
 
 const Modal = () => (
   <Container>
     <Content>
       <Close>&times;</Close>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
+
+      <MList>
+        <MLink to={"/"}>Home</MLink>
+        <MLink to={"/portfolio"}>Portfolio</MLink>
+        <MLink to={"/about"}>About</MLink>
+        <MLink to={"/contact"}>Contact</MLink>
+      </MList>
     </Content>
   </Container>
 );
