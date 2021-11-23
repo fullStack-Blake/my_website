@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
 import Logo from "./Logo";
+import Modal from "./Modal";
 
 const Container = styled.div`
   position: sticky;
@@ -20,12 +21,15 @@ const LogoB = styled(Logo)``;
 const HamburgerH = styled(Hamburger)``;
 
 const Header = () => (
-  <Container>
-    <Main>
-      <Logo />
-      <Hamburger />
-    </Main>
-  </Container>
+  <>
+    <Modal />
+    <Container>
+      <Main>
+        <Logo />
+        <Hamburger />
+      </Main>
+    </Container>
+  </>
 );
 
 export default Header;
