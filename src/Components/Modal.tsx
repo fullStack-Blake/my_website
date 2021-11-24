@@ -74,10 +74,18 @@ const Modal = ({ HandleModal, modal }: ModalProps) => {
         <Close onClick={HandleModal}>&times;</Close>
 
         <MList>
-          <MLink to={"/"}>Home</MLink>
-          <MLink to={"/portfolio"}>Portfolio</MLink>
-          <MLink to={"/about"}>About</MLink>
-          <MLink to={"/contact"}>Contact</MLink>
+          <MLink onClick={HandleModal} to={"/"}>
+            Home
+          </MLink>
+          <MLink onClick={HandleModal} to={"/portfolio"}>
+            Portfolio
+          </MLink>
+          <MLink onClick={HandleModal} to={"/about"}>
+            About
+          </MLink>
+          <MLink onClick={HandleModal} to={"/contact"}>
+            Contact
+          </MLink>
         </MList>
       </Content>
     </Container>
