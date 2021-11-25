@@ -14,6 +14,7 @@ declare module "styled-components" {
       button: string;
       iconBox: string;
       darkfont: string;
+      taskBack: string;
     };
   }
 }

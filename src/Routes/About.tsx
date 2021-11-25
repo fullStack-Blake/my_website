@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import JobCard from "../Components/JobCard";
-import { JobDetail, Skills } from "../AboutDetail/JobDetail";
-import SkillCard from "./SkillCard";
+import { JobDetail, Categories, Skills } from "../AboutDetail/JobDetail";
+import SkillCard from "../Components/SkillCard";
 
 const Container = styled.div``;
 const Section = styled.div`
@@ -14,7 +14,7 @@ const Title = styled.div`
   font-size: 3em;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 `;
 const JobContainer = styled.div`
   display: flex;
@@ -23,7 +23,11 @@ const JobContainer = styled.div`
   column-gap: 40px;
   row-gap: 20px;
 `;
-const SkillsContainer = styled.div``;
+const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+`;
 
 const About = () => {
   return (
@@ -44,14 +48,9 @@ const About = () => {
       <Section>
         <Title>Experties</Title>
         <SkillsContainer>
-          {Skills.map((skill) => {
-            return (
-              <SkillCard
-                category={Object.keys(skill).toString()}
-                detail={Object.values(skill)}
-              />
-            );
-          })}
+          {Categories.map((category, index) => (
+            <SkillCard category={category} detail={Skills[index]} />
+          ))}
         </SkillsContainer>
       </Section>
     </Container>

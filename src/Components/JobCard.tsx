@@ -60,21 +60,21 @@ const Tasks = styled.div`
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  color: white;
+  color: grey;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 1em;
-  overflow: scroll;
-  background-color: ${(props) => props.theme.colors.burger};
+  /* overflow: scroll; */
+  background-color: ${(props) => props.theme.colors.taskBack};
 `;
 const Task = styled.div`
   width: 100%;
   padding-left: 5px;
   font-size: 0.8em;
-  line-height: 1.2;
+  line-height: 1.1;
 `;
 
 const DetailCard = ({ title, company, department, tasks }: DetailCardProps) => {

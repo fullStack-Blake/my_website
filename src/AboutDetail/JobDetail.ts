@@ -31,7 +31,7 @@ export const JobDetail = [
     task: [
       "Maintained high standards during high-volume, fast-paced operations",
       "Prepared and served food and drinks in accordance to store standards",
-      "Built connection and relationship with customers by providing quality customer service",
+      "Built connection and relationship with customers by providing qualitycustomer service",
     ],
   },
   {
@@ -100,38 +100,32 @@ export const Contact = [
   },
 ];
 
+//Add Array to use Category Name
+export const Categories = [
+  "Programming Language",
+  "Framework and Library",
+  "Database Management System",
+  "Tools",
+  "Operating System",
+];
 export const Skills = [
-  {
-    language: [
-      "JavaScript",
-      "TypeScript",
-      "Node",
-      "C",
-      "C++",
-      "Java",
-      "Python",
-    ],
-  },
-  { libraryNFramework: ["React", "Angular", "Express"] },
-  { markup: ["HTML", "CSS"] },
-  { dbms: ["MySQL", "Oracle", "MongoDB", "DBeaver"] },
-  {
-    toolsNOS: [
-      "Git",
-      "GitHub",
-      "Jira",
-      "VSCode",
-      "Xcode",
-      "Visual Studio",
-      "Eclipse",
-      "Terminal",
-      "Mac",
-      "Windows",
-    ],
-  },
+  ["JavaScript", "TypeScript", "Node", "Python", "C", "C++", "Java"],
+  ["React", "Angular", "Express"],
+  ["MySQL", "Oracle", "MongoDB", "DBeaver"],
+  [
+    "Git",
+    "GitHub",
+    "Jira",
+    "VSCode",
+    "Xcode",
+    "Visual Studio",
+    "Eclipse",
+    "Terminal",
+  ],
+  ["Mac", "Windows", "Linux"],
 ];
 
-export const Interest = [
+export const Interests = [
   "Longboarding",
   "Traveling",
   "Singing",

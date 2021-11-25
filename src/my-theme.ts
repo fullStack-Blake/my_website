@@ -12,6 +12,7 @@ const myTheme: DefaultTheme = {
     button: "#485A73",
     iconBox: "#b7b7a4",
     darkfont: "#3F3635",
+    taskBack: "#f1faee",
   },
 };
 
