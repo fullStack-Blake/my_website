@@ -6,7 +6,7 @@ import SkillCard from "../Components/SkillCard";
 
 const Container = styled.div``;
 const Section = styled.div`
-  background-color: #f8edeb;
+  background-color: #bdb2ff;
   min-height: 30vh;
   padding: 3em 2em;
 `;

@@ -60,7 +60,7 @@ const Tasks = styled.div`
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  color: grey;
+  color: #ffffef;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -68,7 +68,8 @@ const Tasks = styled.div`
   align-items: center;
   row-gap: 1em;
   /* overflow: scroll; */
-  background-color: ${(props) => props.theme.colors.taskBack};
+  /* background-color: ${(props) => props.theme.colors.taskBack}; */
+  background-color: #ffc2c3;
 `;
 const Task = styled.div`
   width: 100%;
