@@ -31,7 +31,7 @@ export const JobDetail = [
     task: [
       "Maintained high standards during high-volume, fast-paced operations",
       "Prepared and served food and drinks in accordance to store standards",
-      "Built connection and relationship with customers by providing qualitycustomer service",
+      "Built connection and relationship with customers by providing quality customer service",
     ],
   },
   {
@@ -111,9 +111,11 @@ export const Skills = [
       "Java",
       "Python",
     ],
-    libraryNFramework: ["React", "Angular", "Express"],
-    markup: ["HTML", "CSS"],
-    dbms: ["MySQL", "Oracle", "MongoDB", "DBeaver"],
+  },
+  { libraryNFramework: ["React", "Angular", "Express"] },
+  { markup: ["HTML", "CSS"] },
+  { dbms: ["MySQL", "Oracle", "MongoDB", "DBeaver"] },
+  {
     toolsNOS: [
       "Git",
       "GitHub",

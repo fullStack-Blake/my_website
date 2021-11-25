@@ -13,6 +13,7 @@ const Container = styled.div`
   font-weight: 400;
   background-color: ${(props) => props.theme.colors.background};
   transition: background 0.3s;
+  z-index: 1;
 `;
 const Main = styled.div`
   display: flex;

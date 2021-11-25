@@ -9,8 +9,8 @@ interface DetailCardProps {
 }
 const ContainerT = styled.div`
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   perspective: 1000px;
 `;
 const Card = styled.div`
@@ -33,23 +33,23 @@ const Front = styled.div`
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  row-gap: 20px;
 
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.background};
   /* padding: 30px; */
-  color: black;
+  color: ${(props) => props.theme.colors.darkfont};
 `;
 const Company = styled.div`
-  font-size: 0.9em;
+  font-size: 0.8em;
 `;
 const Title = styled.div`
-  margin-top: -10px;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: bold;
   /* padding-bottom: 1em; */
 `;
 const Department = styled.div`
-  font-size: 0.9em;
+  font-size: 0.8em;
   width: 100%;
   line-height: 1.5;
   color: grey;
@@ -66,9 +66,12 @@ const Tasks = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 15px;
+  row-gap: 1em;
+  overflow: scroll;
+  background-color: ${(props) => props.theme.colors.burger};
 `;
 const Task = styled.div`
+  width: 100%;
   padding-left: 5px;
   font-size: 0.8em;
   line-height: 1.2;

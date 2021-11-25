@@ -1,19 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import JobCard from "../Components/JobCard";
-import { JobDetail } from "../AboutDetail/JobDetail";
+import { JobDetail, Skills } from "../AboutDetail/JobDetail";
+import SkillCard from "./SkillCard";
 
 const Container = styled.div``;
 const Section = styled.div`
-  background-color: grey;
+  background-color: #f8edeb;
   min-height: 30vh;
-  padding: 2em;
+  padding: 3em 2em;
 `;
 const Title = styled.div`
   font-size: 3em;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 `;
 const JobContainer = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ const JobContainer = styled.div`
   column-gap: 40px;
   row-gap: 20px;
 `;
+const SkillsContainer = styled.div``;
 
 const About = () => {
   return (
@@ -38,6 +40,19 @@ const About = () => {
             />
           ))}
         </JobContainer>
+      </Section>
+      <Section>
+        <Title>Experties</Title>
+        <SkillsContainer>
+          {Skills.map((skill) => {
+            return (
+              <SkillCard
+                category={Object.keys(skill).toString()}
+                detail={Object.values(skill)}
+              />
+            );
+          })}
+        </SkillsContainer>
       </Section>
     </Container>
   );

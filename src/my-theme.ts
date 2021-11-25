@@ -6,11 +6,12 @@ const myTheme: DefaultTheme = {
 
   colors: {
     background: "white",
-    main: "cyan",
-    secondary: "magenta",
+    main: "#FFF6F4",
+    secondary: "#EFCBC5",
     burger: "#2F4858",
     button: "#485A73",
     iconBox: "#b7b7a4",
+    darkfont: "#3F3635",
   },
 };
 

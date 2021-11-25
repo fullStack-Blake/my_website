@@ -13,6 +13,7 @@ declare module "styled-components" {
       burger: string;
       button: string;
       iconBox: string;
+      darkfont: string;
     };
   }
 }
