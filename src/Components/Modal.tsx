@@ -63,27 +63,28 @@ const MLink = styled(Link)`
   }
 `;
 interface ModalProps {
-  HandleModal: React.MouseEventHandler;
+  showModal: React.MouseEventHandler;
   modal: boolean;
+  handleModal: React.MouseEventHandler;
 }
 
-const Modal = ({ HandleModal, modal }: ModalProps) => {
+const Modal = ({ handleModal, showModal, modal }: ModalProps) => {
   return (
     <Container modal={modal}>
       <Content>
-        <Close onClick={HandleModal}>&times;</Close>
+        <Close onClick={showModal}>&times;</Close>
 
         <MList>
-          <MLink onClick={HandleModal} to={"/"}>
+          <MLink onClick={handleModal} to={"/"}>
             Home
           </MLink>
-          <MLink onClick={HandleModal} to={"/portfolio"}>
+          <MLink onClick={handleModal} to={"/portfolio"}>
             Portfolio
           </MLink>
-          <MLink onClick={HandleModal} to={"/about"}>
+          <MLink onClick={handleModal} to={"/about"}>
             About
           </MLink>
-          <MLink onClick={HandleModal} to={"/contact"}>
+          <MLink onClick={handleModal} to={"/contact"}>
             Contact
           </MLink>
         </MList>

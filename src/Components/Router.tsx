@@ -4,6 +4,7 @@ import Header from "./Header";
 import Home from "../Routes/Home";
 import Footer from "./Footer";
 import About from "../Routes/About";
+import Contact from "../Routes/Contact";
 
 const Router = () => (
   <BrowserRouter>
@@ -11,6 +12,7 @@ const Router = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<Navigate replace to="/" />} />
     </Routes>
   </BrowserRouter>

@@ -33,11 +33,11 @@ const Container = styled.div`
 const Bar = styled.div``;
 
 interface HamburgerProps {
-  HandleModal: React.MouseEventHandler;
+  showModal: React.MouseEventHandler;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({ HandleModal }) => (
-  <Container onClick={HandleModal}>
+const Hamburger: React.FC<HamburgerProps> = ({ showModal }) => (
+  <Container onClick={showModal}>
     <Bar />
   </Container>
 );

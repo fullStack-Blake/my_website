@@ -23,20 +23,20 @@ const Button = styled.button``;
 
 const Header = () => {
   const [modal, setModal] = useState(false);
-  const HandleModal = () => {
-    console.log("Working");
+  const showModal = () => {
     setModal((prevState) => !prevState);
   };
-  const HandleDiv = (event: React.MouseEvent) => {
-    console.log("This is working");
+  const handleModal = () => {
+    setModal((prevState) => !prevState);
+    window.scrollTo(0, 0);
   };
   return (
     <>
-      <Modal HandleModal={HandleModal} modal={modal} />
+      <Modal handleModal={handleModal} showModal={showModal} modal={modal} />
       <Container>
         <Main>
           <Logo />
-          <Hamburger HandleModal={HandleModal} />
+          <Hamburger showModal={showModal} />
         </Main>
       </Container>
     </>

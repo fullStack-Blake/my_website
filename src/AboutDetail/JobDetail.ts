@@ -86,19 +86,18 @@ export const Project = [
   },
 ];
 
-export const Contact = [
-  {
-    first: "SangYeup",
-    last: "Han",
-    english: "Blake",
-    phone: "647-887-9236",
-    email: "han.sangyeup@gmail.com",
-    github: "github.com/fullstack-blake",
-    linkedin: "linkedin.com/in/sangyeuphan/",
-    intro:
-      "Being Self-motivated, and having strong analytical skills,seeking challenges to gain diverse experiences",
-  },
-];
+export const ContactInfo = {
+  first: "SangYeup",
+  last: "Han",
+  english: "Blake",
+  phone: "647-887-9236",
+  email: "han.sangyeup@gmail.com",
+  github: "github.com/fullstack-blake",
+  linkedin: "linkedin.com/in/sangyeuphan/",
+  intro:
+    "Being Self-motivated, and having strong analytical skills,seeking challenges to gain diverse experiences",
+  title: "Full Stack Developer",
+};
 
 //Add Array to use Category Name
 export const Categories = [
