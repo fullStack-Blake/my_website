@@ -15,6 +15,7 @@ const Title = styled.div`
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1em;
+  font-family: "Roboto Slab", serif;
 `;
 const JobContainer = styled.div`
   display: flex;
@@ -33,7 +34,11 @@ const About = () => {
   return (
     <Container>
       <Section>
-        <Title>Experience & Services</Title>
+        <Title>Amazing Coworker</Title>
+        <br />
+        <br />
+        <br />
+        <Title>Experience</Title>
         <JobContainer>
           {JobDetail?.map((job, index) => (
             <JobCard

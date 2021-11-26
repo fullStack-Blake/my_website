@@ -24,6 +24,8 @@ const Content = styled.div`
   border: 1px solid #888;
   border-radius: 10px;
   width: 60%;
+  margin-top: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 `;
 
 const Close = styled.button`
@@ -46,7 +48,7 @@ const MList = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  /* padding: 40px; */
 `;
 const MLink = styled(Link)`
   all: unset;
