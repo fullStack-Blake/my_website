@@ -6,10 +6,10 @@ const myTheme: DefaultTheme = {
 
   colors: {
     background: "white",
-    main: "#FFF6F4",
-    secondary: "#EFCBC5",
+    main: "#827bcc",
+    secondary: "rgba(189, 178, 255, 0.8)",
     burger: "#2F4858",
-    button: "#485A73",
+    button: "black",
     iconBox: "#b7b7a4",
     darkfont: "#3F3635",
     taskBack: "#f1faee",

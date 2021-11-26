@@ -35,8 +35,9 @@ const About = () => {
       <Section>
         <Title>Experience & Services</Title>
         <JobContainer>
-          {JobDetail?.map((job) => (
+          {JobDetail?.map((job, index) => (
             <JobCard
+              key={index}
               title={job.title}
               company={job.company}
               department={job.department}
@@ -49,7 +50,7 @@ const About = () => {
         <Title>Experties</Title>
         <SkillsContainer>
           {Categories.map((category, index) => (
-            <SkillCard category={category} detail={Skills[index]} />
+            <SkillCard key={index} category={category} detail={Skills[index]} />
           ))}
         </SkillsContainer>
       </Section>

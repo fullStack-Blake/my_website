@@ -6,13 +6,13 @@ import Linkedin from "../Images/linkedin.png";
 import Instagram from "../Images/instagram.png";
 
 const Container = styled.div`
+  display: none;
   position: relative;
   bottom: 0;
-  height: 4rem;
+  height: 6rem;
   width: 100%;
   color: white;
   text-align: center;
-  padding-bottom: 1rem;
 `;
 const IconList = styled.div`
   height: 100%;

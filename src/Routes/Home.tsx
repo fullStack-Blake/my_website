@@ -17,24 +17,25 @@ const HomeContent = styled.div`
 `;
 const IntroHeader = styled.div`
   font-family: "Roboto Slab", serif;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  /* height: 160px; */
+`;
+const HRow = styled.div`
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 30px;
+`;
+const Name = styled.div`
   font-weight: 700;
   font-size: 60px;
   letter-spacing: 3px;
-  padding-top: 20px;
-`;
-const HRow = styled.div`
-  margin-bottom: 30px;
-`;
-const JobTitle = styled.div`
-  font-weight: 400;
-  font-size: 24px;
-  letter-spacing: 1px;
 `;
 const TextContent = styled.div`
   letter-spacing: 2px;
   width: 80%;
   line-height: 150%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 // const Photo = styled.div`
 //   display: flex;
@@ -53,19 +54,22 @@ const Image = styled.img`
 const About = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 `;
 const FlexText = styled.div`
   font-family: "Roboto Slab", serif;
-  font-size: 1.2em;
+  font-size: 1em;
   letter-spacing: 1px;
   line-height: 1.4;
   margin-bottom: 20px;
+  width: 80%;
 `;
 const Talk = styled.div`
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: 600;
   margin-bottom: 20px;
+  width: 50%;
+  line-height: 1.2;
 `;
 const ContactBox = styled.div`
   width: 100%;
@@ -73,9 +77,7 @@ const ContactBox = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-const ContactText = styled.div`
-  margin-bottom: 20px;
-`;
+const ContactText = styled.div``;
 const EmailBtn = styled.button`
   all: unset;
   cursor: pointer;
@@ -90,6 +92,10 @@ const EmailBtn = styled.button`
   a:visited {
     all: unset;
   }
+  &:hover {
+    color: black;
+    background-color: ${(props) => props.theme.colors.main};
+  }
 `;
 
 const Home = () => (
@@ -97,22 +103,18 @@ const Home = () => (
     <HomeContent>
       <IntroHeader>
         <HRow>Hey There,</HRow>
-        <HRow>I'm Blake</HRow>
+        <Name>I'm Blake</Name>
       </IntroHeader>
       <TextContent>
-        I design beautifully simple things, And I love what I do.
+        Simple things are beautiful, And I love challenges.
       </TextContent>
 
       <About>
         <Image src={Computer} />
-        <FlexText>
-          I have always wanted my work to be part of a bigger self to make
-          people’s daily lives and complex app simple to use.
-        </FlexText>
+        <FlexText>I want to make your life easy and simple</FlexText>
         <ContactBox>
           <ContactText>
-            <Talk>Got a project?</Talk>
-            <Talk>Let's Talk!</Talk>
+            <Talk>Got a project? Let's Talk!</Talk>
           </ContactText>
           <EmailBtn>
             <a href="mailto:han.sangyeup@gmail.com">Contact Me</a>

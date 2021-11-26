@@ -39,8 +39,8 @@ const SkillCard = ({ category, detail }: SkillCardProps) => {
     <Container>
       <Title>{category}</Title>
       <DetailContainer>
-        {detail.map((item) => (
-          <Detail>{item}</Detail>
+        {detail.map((item, index) => (
+          <Detail key={index}>{item}</Detail>
         ))}
       </DetailContainer>
     </Container>

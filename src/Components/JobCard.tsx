@@ -88,8 +88,8 @@ const DetailCard = ({ title, company, department, tasks }: DetailCardProps) => {
           <Department>{department}</Department>
         </Front>
         <Tasks>
-          {tasks?.map((task) => (
-            <Task>{task}</Task>
+          {tasks?.map((task, index) => (
+            <Task key={index}>{task}</Task>
           ))}
         </Tasks>
       </Card>
