@@ -6,6 +6,7 @@ import Linkedin from "../Images/linkedin.png";
 import Instagram from "../Images/instagram.png";
 
 const Container = styled.div`
+  //display Footer when screen size is bigger
   display: none;
   position: relative;
   bottom: 0;

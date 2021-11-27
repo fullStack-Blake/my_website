@@ -34,10 +34,6 @@ const About = () => {
   return (
     <Container>
       <Section>
-        <Title>Amazing Coworker</Title>
-        <br />
-        <br />
-        <br />
         <Title>Experience</Title>
         <JobContainer>
           {JobDetail?.map((job, index) => (

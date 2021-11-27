@@ -34,6 +34,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "hopeful-shirley-48b6b6.netlify.app",
   "browserslist": {
     "production": [
       ">0.2%",
