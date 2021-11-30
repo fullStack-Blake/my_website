@@ -14,6 +14,9 @@ const Container = styled.div`
   width: 100%;
   color: white;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;
 const IconList = styled.div`
   height: 100%;

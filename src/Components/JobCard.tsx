@@ -7,10 +7,10 @@ interface DetailCardProps {
   department: string;
   tasks: Array<string>;
 }
-const ContainerT = styled.div`
+const Container = styled.div`
   background-color: transparent;
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
   perspective: 1000px;
 `;
 const Card = styled.div`
@@ -41,10 +41,10 @@ const Front = styled.div`
   color: ${(props) => props.theme.colors.darkfont};
 `;
 const Company = styled.div`
-  font-size: 0.8em;
+  font-size: 1em;
 `;
 const Title = styled.div`
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bold;
   /* padding-bottom: 1em; */
 `;
@@ -74,13 +74,13 @@ const Tasks = styled.div`
 const Task = styled.div`
   width: 100%;
   padding-left: 5px;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.1;
 `;
 
 const DetailCard = ({ title, company, department, tasks }: DetailCardProps) => {
   return (
-    <ContainerT>
+    <Container>
       <Card>
         <Front>
           <Company>{company}</Company>
@@ -93,7 +93,7 @@ const DetailCard = ({ title, company, department, tasks }: DetailCardProps) => {
           ))}
         </Tasks>
       </Card>
-    </ContainerT>
+    </Container>
   );
 };
 

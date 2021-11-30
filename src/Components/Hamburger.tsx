@@ -29,6 +29,9 @@ const Container = styled.div`
   &:hover div {
     transform: scale(0);
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 const Bar = styled.div``;
 

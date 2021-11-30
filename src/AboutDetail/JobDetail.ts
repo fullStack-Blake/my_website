@@ -4,12 +4,12 @@ export const JobDetail = [
     company: "Government of Canada",
     department: "Ministry of Labour Training and Skills Development",
     task: [
-      "Worked for corporate service branch",
-      "Investigated and suggested feasible options for developing a new case management system",
-      "Developed strong analytic skills from creating multiple workflows",
-      "Created a web scraper to extract and convert data from the webpage",
-      "Provided Project Analysis Report to director of the Ministry",
-      "Arranged weekly meetings with other ministries and created project layout",
+      "Corporate service branch",
+      "Investigated options to develop a new application",
+      "Strong analytic skills from creating workflows",
+      "Developed web scrapers to extract data",
+      "Provided Project Analysis Report to director",
+      "Arranged meetings with and created project layout",
     ],
   },
   {
@@ -103,7 +103,7 @@ export const ContactInfo = {
 export const Categories = [
   "Programming Language",
   "Framework and Library",
-  "Database Management System",
+  "DBMS",
   "Tools",
   "Operating System",
 ];

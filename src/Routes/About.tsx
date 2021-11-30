@@ -25,6 +25,7 @@ const JobContainer = styled.div`
   row-gap: 20px;
 `;
 const SkillsContainer = styled.div`
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;

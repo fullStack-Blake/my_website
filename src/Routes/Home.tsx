@@ -20,11 +20,20 @@ const IntroHeader = styled.div`
   padding-top: 30px;
   margin-bottom: 30px;
   /* height: 160px; */
+  /* @media screen and (min-width: 768px) {
+    display: flex;
+    height: 50px;
+    align-items: flex-end;
+    justify-content: space-between;
+  } */
 `;
 const HRow = styled.div`
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 30px;
+  /* @media screen and (min-width: 768px) {
+    margin: 0 0;
+  } */
 `;
 const Name = styled.div`
   font-weight: 700;
@@ -50,15 +59,32 @@ const TextContent = styled.div`
 const Image = styled.img`
   width: 100%;
   margin-bottom: 20px;
+  min-width: 350px;
+  max-width: 600px;
 `;
 const About = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+`;
+const FlexContainer = styled.div`
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    align-items: flex-end;
+  }
 `;
 const FlexText = styled.div`
   font-family: "Roboto Slab", serif;
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 1px;
   line-height: 1.4;
   margin-bottom: 20px;
@@ -70,14 +96,11 @@ const Talk = styled.div`
   margin-bottom: 20px;
   width: 50%;
   line-height: 1.2;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    text-align: right;
+  }
 `;
-const ContactBox = styled.div`
-  width: 100%;
-  /* display: flex; */
-  align-items: center;
-  justify-content: space-between;
-`;
-const ContactText = styled.div``;
 const EmailBtn = styled.button`
   all: unset;
   cursor: pointer;
@@ -96,6 +119,9 @@ const EmailBtn = styled.button`
     color: black;
     background-color: ${(props) => props.theme.colors.main};
   }
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
 `;
 
 const Home = () => (
@@ -111,15 +137,13 @@ const Home = () => (
 
       <About>
         <Image src={Computer} />
-        <FlexText>I want to make your life easy and simple</FlexText>
-        <ContactBox>
-          <ContactText>
-            <Talk>Got a project? Let's Talk!</Talk>
-          </ContactText>
+        <FlexContainer>
+          <FlexText>I want to make your life easy and simple</FlexText>
+          <Talk>Got a project? Let's Talk!</Talk>
           <EmailBtn>
             <a href="mailto:han.sangyeup@gmail.com">Contact Me</a>
           </EmailBtn>
-        </ContactBox>
+        </FlexContainer>
       </About>
     </HomeContent>
 

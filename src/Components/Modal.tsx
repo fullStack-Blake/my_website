@@ -16,6 +16,9 @@ const Container = styled.div<ContainerProps>`
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 const Content = styled.div`
   background-color: #fefefe;

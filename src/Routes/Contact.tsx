@@ -18,8 +18,8 @@ const Container = styled.div`
 const ProfileCard = styled.div`
   background-color: #827bcc;
   border-radius: 30px;
-  height: 70%;
-  width: 70%;
+  height: 500px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
