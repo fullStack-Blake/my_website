@@ -10,7 +10,7 @@ const Container = styled.div`
   width: 100%;
   @media screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 20vw 1fr;
     gap: 10px;
     align-items: center;
   }
@@ -28,13 +28,14 @@ const Title = styled.div`
 `;
 const DetailContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   row-gap: 20px;
   column-gap: 20px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 `;
 const Detail = styled.div`
   display: flex;

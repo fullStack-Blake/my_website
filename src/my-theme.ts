@@ -6,7 +6,7 @@ const myTheme: DefaultTheme = {
 
   colors: {
     background: "white",
-    main: "#827bcc",
+    main: "rgb(85,73,215)",
     secondary: "rgba(189, 178, 255, 0.8)",
     burger: "#2F4858",
     button: "black",

@@ -105,7 +105,7 @@ const EmailBtn = styled.button`
   all: unset;
   cursor: pointer;
   color: white;
-  background-color: ${(props) => props.theme.colors.button};
+  background-color: ${(props) => props.theme.colors.main};
   font-weight: 600;
   width: 100%;
   height: 50px;
