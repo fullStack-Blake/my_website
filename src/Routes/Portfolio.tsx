@@ -4,27 +4,33 @@ import PortfolioCard from "../Components/PortfolioCard";
 import Netflex from "../Images/netflex.png";
 
 const Container = styled.div``;
-const Portfolios = styled.div``;
+const Portfolios = styled.div`
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+`;
 
 const portfolio = [
   {
     title: "NETFLEX",
     address: "https://zen-wozniak-50bb82.netlify.app/",
-    image: "../Images/netflex.png",
+    image: Netflex,
     desc: "Movie & TV Application",
   },
   {
     title: "NETFLEX",
     address: "https://zen-wozniak-50bb82.netlify.app/",
-    image: "../Images/netflex.png",
+    image: Netflex,
     desc: "Movie & TV Application",
   },
   {
     title: "NETFLEX",
     address: "https://zen-wozniak-50bb82.netlify.app/",
-    image: "../Images/netflex.png",
+    image: Netflex,
     desc: "Movie & TV Application",
   },
+
   // { title: "hi", address: "hey", image: , desc: "description" },
   // { title: "hi", address: "hey", desc: "description" },
 ];

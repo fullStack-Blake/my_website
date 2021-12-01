@@ -10,12 +10,22 @@ interface PortfolioCardProps {
 }
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 `;
-const Title = styled.div``;
+const Title = styled.div`
+  font-size: 1.2em;
+  font-weight: bold;
+`;
 const HLink = styled(Link)`
   all: unset;
   cursor: pointer;
+  > div {
+    margin-top: 5px;
+  }
 `;
 const HImage = styled.img`
   width: 300px;
