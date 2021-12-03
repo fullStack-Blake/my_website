@@ -88,6 +88,7 @@ const About = () => {
             The work you have done has been exceptional. I’d be prepared to
             speak to any employer about the work you did and how well it was
             done and how it exceeded our expectations.
+            <br />
             <br /> - Manager, MLTSD, Government of Canada
           </Reference>
         </AboutText>
