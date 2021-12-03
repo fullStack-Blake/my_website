@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 interface PortfolioCardProps {
@@ -20,7 +19,7 @@ const Title = styled.div`
   font-size: 1.2em;
   font-weight: bold;
 `;
-const HLink = styled(Link)`
+const Link = styled.a`
   all: unset;
   cursor: pointer;
   > div {
@@ -41,11 +40,11 @@ const PortfolioCard = ({
   console.log(title, address, description, image);
   return (
     <Container>
-      <HLink to={address}>
+      <Link href={address} target="_blank">
         <HImage src={image} alt={title} />
         <Title>{title}</Title>
         <Desc>{description}</Desc>
-      </HLink>
+      </Link>
     </Container>
   );
 };

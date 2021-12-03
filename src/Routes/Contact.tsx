@@ -46,17 +46,19 @@ const ContactContainer = styled.div`
 `;
 const Name = styled.div`
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: "Courier New", Courier, monospace;
-  line-height: 1.3;
+  line-height: 2;
 `;
 const Title = styled.div`
   /* font-weight: bold; */
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 2;
 `;
 const Icons = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 `;

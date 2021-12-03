@@ -12,20 +12,15 @@ const Container = styled.div`
 const HomeContent = styled.div`
   /* margin-top: 20px; */
   margin: 0 50px;
-  border-bottom: 1px solid gray;
   padding-bottom: 3rem;
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid gray;
+  }
 `;
 const IntroHeader = styled.div`
   font-family: "Roboto Slab", serif;
   padding-top: 30px;
   margin-bottom: 30px;
-  /* height: 160px; */
-  /* @media screen and (min-width: 768px) {
-    display: flex;
-    height: 50px;
-    align-items: flex-end;
-    justify-content: space-between;
-  } */
 `;
 const HRow = styled.div`
   font-size: 40px;
@@ -131,8 +126,12 @@ const Home = () => (
         <HRow>Hey There,</HRow>
         <Name>I'm Blake</Name>
       </IntroHeader>
-      <TextContent>
+      {/* <TextContent>
         Simple things are beautiful, And I love challenges.
+      </TextContent> */}
+      <TextContent>
+        Being Self-motivated, and having strong analytical skills,seeking
+        challenges to gain diverse experiences
       </TextContent>
 
       <About>

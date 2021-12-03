@@ -5,14 +5,12 @@
 ### Screen
 
 - [x] Home
-- [] Portfolio {Link to my portfolio page, github}
-- [] About me {Work Experience, My goal}
-- [] contact {Phone, email}
+- [x] Portfolio {Link to my portfolio page, github}
+- [x] About me {Work Experience, My goal}
+- [x] contact {Phone, email}
 
 ### Theme
 
-- [] Default Theme
+- [x] Default Theme
 - [] Dark Theme
 - [] other Theme / customize Theme
-
-#### This is a simple webpage about me, One week assignment!
