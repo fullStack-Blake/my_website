@@ -29,6 +29,10 @@ const Link = styled.a`
 const HImage = styled.img`
   width: 300px;
   border-radius: 20px;
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    width: 65%;
+  }
 `;
 const Desc = styled.div``;
 const PortfolioCard = ({

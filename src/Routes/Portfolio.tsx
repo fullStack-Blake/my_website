@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import PortfolioCard from "../Components/PortfolioCard";
 import Netflex from "../Images/netflex.png";
-import Blake from "../Images/Blake_smile-removebg.png";
 
 const Container = styled.div`
   min-height: calc(100vh - 70px);
