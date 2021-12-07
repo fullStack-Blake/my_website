@@ -8,11 +8,21 @@ import Computer from "../Images/computer.jpg";
 const Container = styled.div`
   /* position: relative; */
   /* min-height: calc(100vh - 70px); */
+
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    margin: 0 30px;
+  }
 `;
 const HomeContent = styled.div`
-  /* margin-top: 20px; */
+  margin-top: 20px;
   margin: 0 50px;
   padding-bottom: 3rem;
+
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    margin: 0;
+  }
   @media screen and (min-width: 768px) {
     border-bottom: 1px solid gray;
   }
@@ -56,6 +66,12 @@ const Image = styled.img`
   margin-bottom: 20px;
   min-width: 350px;
   max-width: 600px;
+
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    min-width: 150px;
+    width: 90%;
+  }
 `;
 const About = styled.div`
   display: flex;
