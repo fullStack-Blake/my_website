@@ -17,6 +17,11 @@ const Title = styled.div`
   line-height: 1.2;
   margin-bottom: 0.7em;
   font-family: "Roboto Slab", serif;
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 2em;
+    width: 80%;
+  }
 `;
 const JobContainer = styled.div`
   display: flex;
@@ -58,6 +63,7 @@ const Reference = styled.div`
   margin-bottom: 20px;
   font-family: "Courier New", Courier, monospace;
   width: 80%;
+  /* text-align: center; */
 `;
 const ImageContainer = styled.div`
   height: 100%;
@@ -73,6 +79,11 @@ const AboutImage = styled.img`
   /* background-color: blue; */
   /* height: 100%; */
   opacity: 0.9;
+
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    width: 200px;
+  }
 `;
 
 const About = () => {
@@ -89,7 +100,10 @@ const About = () => {
             speak to any employer about the work you did and how well it was
             done and how it exceeded our expectations.
             <br />
-            <br /> - Manager, MLTSD, Government of Canada
+            <br />
+            Eugene Wilson, Manager
+            <br />
+            MLTSD, Government of Canada
           </Reference>
         </AboutText>
       </IntroContainer>

@@ -36,6 +36,10 @@ const DetailContainer = styled.div`
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  /* For Mobile Portrait View and Device width under 768px */
+  @media screen and (max-device-width: 767px) and (orientation: portrait) {
+    justify-content: center;
+  }
 `;
 const Detail = styled.div`
   display: flex;
